@@ -27,6 +27,3 @@ for o in id_list:
         for a in flwing_result:
             flwing_username = a[0]
         c.execute('''INSERT INTO Relation(follower_id, follower_username, following_id, following_username) Values(?, ?, ?, ?)''', (o, flwer_username, crt_flw_id, flwing_username))
-conn.commit()
-c.close()
-conn.close()
