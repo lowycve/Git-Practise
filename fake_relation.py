@@ -7,15 +7,6 @@ from flask_bcrypt import Bcrypt
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
 
-id_list = []
-for i in range(1, 1112):
-    id_list.append(i)
-flw_count_list = []
-for y in range(20):
-    flw_count_list.append(y)
-conn = sqlite3.connect('friends.db')
-c = conn.cursor()
-
 
 for o in id_list:
     print(o)
